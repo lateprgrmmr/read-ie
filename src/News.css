@@ -1,0 +1,10 @@
+
+.article {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+li {
+    height: 30px;
+    line-height: 30px;
+}

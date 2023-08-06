@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+// import './imgs/Sabrina-Pasterski.jpg' from './imgs';
+import Sabrina_Pasterski from "./imgs/Sabrina_Pasterski.jpg";
+import { News } from "./components/newComponent";
+import FooterBar from "./components/footer";
+import "./News.css";
 
-function App() {
+function Profile() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1 className="article">Amazing Scientists</h1>
+      <img src={Sabrina_Pasterski} alt="Scientist" />
     </div>
   );
 }
 
-export default App;
+export default function Gallery() {
+  return (
+    <div style={{ minHeight: "100vh", margin: "0" }}>
+      <News />
+      <section className="article">
+        <Profile />
+      </section>
+      <FooterBar />
+    </div>
+  );
+}
